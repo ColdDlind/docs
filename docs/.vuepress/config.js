@@ -15,7 +15,10 @@ module.exports = {
     }
   },
   markdown: {
-    lineNumbers: true // 代码块显示行号
+    lineNumbers: true, // 代码块显示行号
+    extendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'), { enabled: true })
+    }
   },
   themeConfig: {
     // sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
@@ -28,17 +31,11 @@ module.exports = {
         ariaLabel: 'Languages',
         editLinks: true,
         editLinkText: 'Edit this page on GitHub',
-        sidebarDepth: 2,
         // displayAllHeaders: true,
         sidebar: [
           {
             title: 'GettingStart',
             path: './GettingStart',
-            sidebarDepth: 2
-          },
-          {
-            title: 'CLI',
-            path: './CLI',
             sidebarDepth: 2
           },
           {
@@ -58,6 +55,40 @@ module.exports = {
                 path: './Configuration/DAL'
               }
             ]
+          },
+          {
+            title: 'CLI',
+            path: './CLI',
+            sidebarDepth: 2
+          },
+          {
+            title: 'API',
+            path: './API'
+          },
+          {
+            title: 'DAL',
+            children: [
+              {
+                title: 'DAL',
+                path: './DAL/DAL'
+              },
+              {
+                title: 'OpenAPI',
+                path: './DAL/OpenAPI'
+              },
+              {
+                title: 'GraphQl-API',
+                path: './DAL/GraphQl-API'
+              }
+            ]
+          },
+          {
+            title: 'Examples',
+            path: './Examples.md'
+          },
+          {
+            title: 'Deployment',
+            path: './Deployment.md'
           }
         ],
         nav: [
@@ -89,20 +120,55 @@ module.exports = {
             sidebarDepth: 1
           },
           {
+            title: '配置',
+            children: [
+              {
+                title: 'Common',
+                path: './zh/Configuration/Common'
+              },
+              {
+                title: 'API',
+                path: './zh/Configuration/API'
+              },
+              {
+                title: 'DAL',
+                path: './zh/Configuration/DAL'
+              }
+            ]
+          },
+          {
             title: 'CLI',
             path: './zh/CLI',
             sidebarDepth: 1
           },
           {
-            title: '配置',
+            title: 'API',
+            path: './zh/API'
+          },
+          {
+            title: 'DAL',
             children: [
               {
-                title: 'Common',
-                path: '.zh/Configuration/Common'
+                title: 'DAL',
+                path: './zh/DAL/DAL'
               },
-              '.zh/Configuration/API',
-              '.zh/Configuration/DAL'
+              {
+                title: 'OpenAPI',
+                path: './zh/DAL/OpenAPI'
+              },
+              {
+                title: 'GraphQl-API',
+                path: './DAL/GraphQl-API'
+              }
             ]
+          },
+          {
+            title: '示例',
+            path: './zh/Examples.md'
+          },
+          {
+            title: '部署',
+            path: './zh/Deployment.md'
           }
         ],
         nav: [

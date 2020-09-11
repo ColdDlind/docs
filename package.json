@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "vuepress": "^1.5.4"
+  },
+  "dependencies": {
+    "markdown-it-task-lists": "^2.1.1"
   }
 }
