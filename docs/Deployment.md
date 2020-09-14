@@ -2,7 +2,7 @@
 
 ## `Docker` deployment
 
-mrapi project, it is recommended to use `Docker` deployment
+mrapi project, it is recommended to use `Docker` deployment, Use TAPD workflow to package the Docker image and push it to `Tencent Cloud` and deploy to the corresponding cluster
 
 `DockerFile` basic configuration
 

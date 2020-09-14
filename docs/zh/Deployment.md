@@ -4,7 +4,7 @@
 
 ### 部署方式
 
-mrapi 的项目，建议采用 Docker 部署
+mrapi 的项目，建议采用 Docker 部署，使用 TAPD 工作流打包 Docker 镜像并推送到 `腾讯云` 上，部署到对应集群里
 
 #### `dockerFile`基础配置
 
