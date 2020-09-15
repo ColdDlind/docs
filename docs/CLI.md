@@ -40,11 +40,11 @@ The following properties in `mrapiConfig` will be used:
 const { inputSchemaDir, schemaDir, outputDir, managementUrl } = this.mrapiConfig
 ```
 
-Reference [mrapiConfig](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/Common.md)
+Reference [mrapiConfig](https://mrapi-js.github.io/docs/Configuration/Common.html)
 
 ## generate
 
-Used to initialize the multi-tenant management instance and generate the `prisma client`, `nexus type`, and `oas` codes required by the [DAL](https://github.com/mrapi-js/mrapi/blob/dev/docs/DAL.md).
+Used to initialize the multi-tenant management instance and generate the `prisma client`, `nexus type`, and `oas` codes required by the [DAL](https://mrapi-js.github.io/docs/Configuration/DAL.html).
 
 This command roughly does the following things:
 

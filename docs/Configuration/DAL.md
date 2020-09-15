@@ -2,7 +2,7 @@
 
 **The current configuration is only available for `@mrapi/dal`**
 
-Note: Please read [mrapi overall configuration description](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/Common.md) first
+Note: Please read [mrapi overall configuration description](https://mrapi-js.github.io/docs/Configuration/Common.html) first
 
 ## Parameter Description
 

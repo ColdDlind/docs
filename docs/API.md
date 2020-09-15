@@ -51,7 +51,7 @@ exports.default = {
 }
 ```
 
-**Note: For other configuration items, please refer to [API configuration](./Configuration/API.md)**
+**Note: For other configuration items, please refer to [API configuration](https://mrapi-js.github.io/docs/Configuration/API.html)**
 
 ### Second, start the API service
 
@@ -99,11 +99,11 @@ exports.default = {
 }
 ```
 
-**Note: For other configuration items, please refer to [API configuration](./Configuration/API.md)**
+**Note: For other configuration items, please refer to [API configuration](https://mrapi-js.github.io/docs/Configuration/API.html)**
 
 ### Second, Configuration before startup
 
-Please refer to the [DAL document](./DAL.md) and configure `prisma` related dependent files and configuration items, otherwise it may cause startup failure
+Please refer to the [DAL document](https://mrapi-js.github.io/docs/Configuration/DAL.html) and configure `prisma` related dependent files and configuration items, otherwise it may cause startup failure
 
 ### Third, Start API service
 

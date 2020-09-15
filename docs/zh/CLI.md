@@ -40,11 +40,11 @@ Commands:
 const { inputSchemaDir, schemaDir, outputDir, managementUrl } = this.mrapiConfig
 ```
 
-参考 [mrapiConfig](./Configuration/Common.zh-CN.md)
+参考 [mrapiConfig](https://mrapi-js.github.io/docs/zh/Configuration/Common.html)
 
 ## generate
 
-用于初始化多租户管理实例，并生成 [DAL](./DAL.zh-CN.md) 需要的 `prisma client` 、 `nexus type` 、 `oas` 代码。
+用于初始化多租户管理实例，并生成 [DAL](https://mrapi-js.github.io/docs/zh/Configuration/DAL.html) 需要的 `prisma client` 、 `nexus type` 、 `oas` 代码。
 
 此命令大致做了以下几件事：
 

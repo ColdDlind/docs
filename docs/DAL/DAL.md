@@ -48,11 +48,11 @@ exports.default = {
 }
 ```
 
-**Note: For other configuration items, please refer to [DAL configuration](./Configuration/DAL.md) items**
+**Note: For other configuration items, please refer to [DAL configuration](https://mrapi-js.github.io/docs/Configuration/DAL.html) items**
 
 ### Second, Prepare for initialization
 
-Configure DALOptions ([@mrapi/cli](./CLI.md) may be used in the configuration process)
+Configure DALOptions ([@mrapi/cli](https://mrapi-js.github.io/docs/CLI.html) may be used in the configuration process)
 
 ```javascript
 import { DALOptions } from '@mrapi/dal/lib/types'
@@ -112,7 +112,7 @@ All right! Start enjoying the convenience brought by DAL
 
 ## Basic configuration
 
-Reference [DAL basic configuration](./Configuration/DAL.md)
+Reference [DAL basic configuration](https://mrapi-js.github.io/docs/Configuration/DAL.html)
 
 ## DALOptions
 

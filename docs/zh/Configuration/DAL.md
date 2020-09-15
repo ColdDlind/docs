@@ -1,15 +1,15 @@
-## configuration of @mrapi/dal
+# @mrapi/dal 配置项
 
-**The current configuration is only available for `@mrapi/dal`**
+ 当前配置仅提供给 `@mrapi/dal` 使用。
 
-Note: Please read [mrapi overall configuration description](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/Common.md) first
+**注意\: 请先查看 [mrapi 整体配置项说明](https://mrapi-js.github.io/docs/zh/Configuration/Common.html)**
 
-### Parameter Description
+## 参数说明
 
-```js
+```ts
   // @mrapi/dal config
   dal: {
-    // In the event of a multi-tenant exception, whether or not an      		error is thrown.
+    // In the event of a multi-tenant exception, whether or not an error is thrown.
     pmtErrorThrow: false,
 
     // Remove routes of the same name before adding them.
@@ -17,21 +17,22 @@ Note: Please read [mrapi overall configuration description](https://github.com/m
   }
 ```
 
-#### pmtErrorThrow
+### pmtErrorThrow
 
-When an exception occurs in multi-tenant reading, whether an exception is thrown
+当多租户读取发生异常的时候，是否抛出异常
 
-+ Type: `boolean`
-+ Default: `false`
+- 参数类型：`boolean`
 
-**Note: The default false is to ensure that the GraphQL document can be accessed normally when the tenantIdentity is not set in the request protocol**
+- 默认值：`false`
 
-#### enableRepeatRoute
+**注意\: 默认 false 是为了确保在请求协议中未设置 tenantIdentity 时候也能够正常访问 GraphQL 文档**
 
-Whether to allow adding duplicate server routes
+### enableRepeatRoute
 
-+ Type: `boolean`
-+ Default: `true`
+是否允许添加重复标识的服务器路由
 
-**Note: When the enableRepeatRoute is true, the logic of deleting the route will be executed before adding**
+- 参数类型：`boolean`
 
+- 默认值：`true`
+
+**注意\: 允许重复添加时，在添加前会执行删除路由的逻辑**

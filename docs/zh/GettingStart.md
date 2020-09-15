@@ -41,7 +41,7 @@ pnpx create-mrapi-app my-project
 
 ### 二、修改配置文件
 
-查看配置 [config/mrapi.config.js](./docs/Configuration/common.zh-CN.md)
+查看配置 [config/mrapi.config.js](https://mrapi-js.github.io/docs/zh/Configuration/Common.html)
 
 ### 三、自定义 prisma schema
 

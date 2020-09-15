@@ -1,12 +1,12 @@
-## configuration of @mrapi/api
+# @mrapi/api 配置项
 
-**The current configuration is only available for `@mrapi/api`**
+ 当前配置仅提供给 `@mrapi/api` 使用。
 
-Note: Please read [mrapi overall configuration description](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/Common.md) first
+**注意\: 请先查看 [mrapi 整体配置项说明](https://mrapi-js.github.io/docs/zh/Configuration/Common.html)**
 
-### Parameter Description
+## 参数说明
 
-```js
+```ts
 // @mrapi/api config
 api: {
   // @mrapi/api openapi config
@@ -47,114 +47,20 @@ api: {
 }
 ```
 
-#### tenantIdentity：
-
-The key value of the multi-tenant in the header
-
-+ Type: `string`
-+ Default: `mrapi-pmt`
-
-#### api:
-
-`Object. api` package configuration
-
-#### api.schemaNames:
-
-The name of the schema that needs to be loaded when the `type` is `combined`
-
-+ Type: `array`
-+ Default: `[]`
-
-#### api.autoGenerate:
-
-Whether to execute the `npx mrapi generate script` according to `api.schemaNames` (it is recommended to open in the production environment, and open in the development environment after db changes)
-
-+ Type: `Boolean`
-+ Default: `true`
-
-#### api.schemaIdentity:
-
-Use In combination with dal, customize the `header key` selected by db in `openapi`
-
-+ Type: `string`
-+ Default: `mrapi-db`
-
-#### api.openapi:
-
-`Object. openapi` related configuration
-
-#### api.openapi.dir:
-
-Custom `openapi` storage directory
-
-+ Type: `string`
-+ Default: `/src/openapi`
-
-#### api.openapi.prefix:
-
-Custom `openapi` routing prefix
-
-+ Type: `string`
-+ Default: `/api`
-
-#### api.graphql:
-
-`Object. graphql` related configuration
-
-#### api.graphql.dir:
-
-Custom `graphql` storage directory
-
-+ Type: `string`
-+ Default: `/src/graphql`
-
-#### api.graphql.path:
-
-Graphql access path, the real access path is `${api.graphql.path}/:${schemaName}`, （正则匹配四个字不会翻译 先等等）schemaName(Determine the prismaClient in the `handler` context,  please pass `default` for `${schemaName}` to ensure that the route can be hit, when using `standlone` mode
-
-+ Type: `string`
-+ Default: `/graphql`
-
-#### api.graphql.palyground:
-
-`graphql palyground` address, if `false`, it will close the `playground`
-
-+ Type: `string | boolean`
-+ Default: `palyground`
-
-#### api.graphql.sources:
-
-Graphql source configuration that needs to be mesh
-
-+ Type: `array`
-+ Default: `[]`
-
-#### api.server:
-
-`Object. server` related configuration
-
-#### api.server.port:
-
-Service listening port
-
-+ Type: `number`
-+ Default: `1358`
-
-#### api.server.type:
-
-The usage mode of api package, ['Use alone','Use in combination with dal'], enum['standalone','combined']
-
-+ Type: `string`
-+ Default: `standalone`
-
-#### api.server.options:
-
-Options that will bt transmitted to `fastify`
-
-+ Type: `Object`
-+ Default: `{}`
-
-
-
-#### 
-
+- `tenantIdentity`: String.默认值`mrapi-pmt` 多租户在 header 中的 key 值
+- `api`: Object. api 包配置
+- `api.schemaNames`: Array.默认值`[]`type 为`combined`时需要加载的 schema 名称
+- `api.autoGenerate`: Boolean.默认值`true`,是否根据根据`api.schemaNames`自定执行`npx mrapi generate`脚本(生产环境建议开启，开发环境在 db 变更后开启)
+- `api.schemaIdentity`: String.默认值`mrapi-db`,dal 结合使用下，自定义 openapi 中 db 选择的 header key
+- `api.openapi`: Object. openapi 相关配置
+- `api.openapi.dir`: String.默认值`/src/openapi`自定义 openapi 存放目录
+- `api.openapi.prefix`: String.默认值`/api`自定义 openapi 路由前缀
+- `api.graphql`: Object. graphql 相关配置
+- `api.graphql.dir`: String. 默认值`/src/graphql`自定义 graphql 文件目录
+- `api.graphql.path`: String. 默认值`/graphql`graphql 访问路径,真实访问路径为`${api.graphql.path}/:${schemaName}`,正则匹配 schemaName(决定 handler 上下文中的 prismaClient，`standlone`模式使用时`${schemaName}`请传`default`，确保路由能被命中)
+- `api.graphql.palyground`: String|Boolean. 默认值`palyground`graphql palyground 地址，如果`false`则是关闭 playground
+- `api.graphql.sources`: Array. 默认值`[]`需要 mesh 的 graphql 源配置
+- `api.server`: Object. server 服务相关配置
+- `api.server.port`: Number. 默认值`1358`服务监听端口
+- `api.server.type`: String. 默认值`standalone`enum['standalone','combined']api 包使用模式['单独使用','结合 dal 使用']
+- `api.server.options`: Object.默认值`{}`透传给 fastify 的 options

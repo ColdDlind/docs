@@ -24,7 +24,7 @@ npm install @mrapi/api --save
 ```
 
 ## `standalone` 模式使用
-- 参考 [api-basic](../examples/api-basic) 项目
+- 参考 [api-basic](https://github.com/mrapi-js/mrapi/tree/docs-v1/examples/api-basic) 项目
 - **注意\: 不提供数据库操作能力**
 
 ### 一、配置基础配置文件
@@ -49,7 +49,7 @@ exports.default = {
   }
 }
 ```
-**注意\: 其他配置项请参考 [API 配置项](./Configuration/API.zh-CN.md)**
+**注意\: 其他配置项请参考 [API 配置项](https://mrapi-js.github.io/docs/zh/Configuration/API.html)**
 
 ### 二、启动 API 服务
 ```ts
@@ -74,7 +74,7 @@ Server listening at http://127.0.0.1:1358
 ```
 
 ## `combined` 模式
-- 参考 [api-combine](../examples/api-combine) 项目
+- 参考 [api-combine](https://github.com/mrapi-js/mrapi/tree/docs-v1/examples/api-combine) 项目
 - **注意\: 不提供`graphql-mesh`和`openapi proxy`能力**
 - 通过 `headers['mrapi-pmt']` 携带租户信息，可通过 `mrapi.config.js` 中的 `tenantIdentity` 更改 key 值
 - **_选择 schema_** graphql 接口通过 `/graphql/:schemaName` 确定使用哪一个 schema 对应的 prismaClient，`/graphql` 前缀可通过 `api.graphql.path` 修改
@@ -94,10 +94,10 @@ exports.default = {
   }
 }
 ```
-**注意\: 其他配置项请参考 [API 配置项](./Configuration/API.zh-CN.md)**
+**注意\: 其他配置项请参考 [API 配置项](https://mrapi-js.github.io/docs/zh/Configuration/API.html)**
 
 ### 二、启动前配置
-请参考 [DAL 文档](./DAL.zh-CN.md)，配置好prisma相关依赖文件和配置项,否则可能会导致启动失败
+请参考 [DAL 文档](https://mrapi-js.github.io/docs/zh/Configuration/DAL.html)，配置好prisma相关依赖文件和配置项,否则可能会导致启动失败
 
 ### 三、启动 API 服务
 ```ts

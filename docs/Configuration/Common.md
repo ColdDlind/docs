@@ -86,9 +86,9 @@ The file path of `.env` environment
 
 ### dal
 
-[Configuration field of @mrapi/dal](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/DAL.md)
+[Configuration field of @mrapi/dal](https://mrapi-js.github.io/docs/Configuration/DAL.html)
 
 ### api
 
-[Configuration field of @mrapi/api](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/API.md)
+[Configuration field of @mrapi/api](https://mrapi-js.github.io/docs/Configuration/API.html)
 

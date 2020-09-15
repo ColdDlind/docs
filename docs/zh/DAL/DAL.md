@@ -39,11 +39,11 @@ exports.default = {
 }
 ```
 
-**注意\: 其他配置项请参考 [DAL 配置项](./Configuration/DAL.zh-CN.md)**
+**注意\: 其他配置项请参考 [DAL 配置项](https://mrapi-js.github.io/docs/zh/Configuration/DAL.html)**
 
 ### 二、为初始化做准备
 
-配置 DALOptions （配置的过程可能需要用到 [@mrapi/cli](./CLI.zh-CN.md)）
+配置 DALOptions （配置的过程可能需要用到 [@mrapi/cli](https://mrapi-js.github.io/docs/zh/CLI.html)）
 
 ```ts
 import { DALOptions } from '@mrapi/dal/lib/types'
@@ -103,7 +103,7 @@ app.start() // 默认ip、端口启动服务
 
 ## 基础配置项
 
-参考 [DAL 基础配置项](./Configuration/DAL.zh-CN.md)
+参考 [DAL 基础配置项](https://mrapi-js.github.io/docs/zh/Configuration/DAL.html)
 
 ## DALOptions
 

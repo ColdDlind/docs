@@ -44,7 +44,7 @@ And now, the project has  been generated!
 
 ### Second step: Modify the configuration file
 
-View configuration：[config/mrapi.config.js](https://github.com/mrapi-js/mrapi/blob/dev/docs/Configuration/Common.md)
+View configuration：[config/mrapi.config.js](https://mrapi-js.github.io/docs/Configuration/Common.html)
 
 ### Third step: customize mrapi server
 
