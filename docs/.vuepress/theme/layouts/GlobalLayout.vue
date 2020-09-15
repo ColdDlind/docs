@@ -5,7 +5,7 @@
     <footer>
       <div class="Footer">
         MIT Licensed | Copyright © 2019-present
-        <a href="https://github.com/mrapi-js/mrapi">mrapi-js</a>
+        <a href="https://github.com/mrapi-js">mrapi-js</a>
       </div>
     </footer>
   </div>
