@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/docs/',
   title: 'mrapi',
   description: 'mrapi docs',
   locales: {
