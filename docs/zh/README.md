@@ -16,5 +16,6 @@ features:
   # details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 - title: Typescript
   # details: 核心源代码全部使用typescript编写
-footer: MIT Licensed | Copyright © 2019-present mrapi-js
+# footer: MIT Licensed | Copyright © 2019-present mrapi-js
 ---
+<!-- <Footer/> -->
