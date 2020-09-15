@@ -28,31 +28,11 @@ Get data list by parameter
 
 #### where
 
-+ Type: *`string`*
++ Type: *`JSON string`*
 
-Wrap all model fields in types so that the list can be filtered by any attribute. separated by commas
+Wrap all model fields in types so that the list can be filtered by any attribute.
 
-```typescript
-// Whitelist
-export const FILTERING = [
-  'equals',
-  'not',
-  'in',
-  'not_in',
-  'lt',
-  'lte',
-  'gt',
-  'gte',
-  'contains',
-  'not_contains',
-  'starts_with',
-  'not_starts_with',
-  'ends_with',
-  'not_ends_with',
-]
-```
-
-**Note: Encode must be used for encoding, because attributes are separated by "," and values are also separated by ","**
+**Note: See the corresponding Models in the document for details**
 
 Such as: `id_in:${encode(1,2,3)},name:test`
 
