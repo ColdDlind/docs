@@ -16,5 +16,5 @@ features:
   # details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 - title: TypeScript Support
   # details: The core source code is all written in typescript
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © 2019-present [mrapi-js](https://github.com/mrapi-js)
 ---
