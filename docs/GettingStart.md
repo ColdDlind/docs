@@ -37,7 +37,7 @@ $  yarn create-mrapi-app my-project
 $  npx create-mrapi-app my-project
 
 # or
-$	 pnpx create-mrapi-app my-project
+$  pnpx create-mrapi-app my-project
 ```
 
 And now, the project has  been generated!
@@ -48,6 +48,33 @@ View configuration：[config/mrapi.config.js](https://mrapi-js.github.io/docs/Co
 
 ### Third step: customize mrapi server
 
-....
+such as: 
+```prisma
+# one.prisma
 
-Stay tuned
+model User {
+  email String  @unique
+  id    Int     @default(autoincrement()) @id
+  name  String?
+  Post  Post[]
+}
+
+model Post {
+  authorId  Int?
+  content   String?
+  id        Int     @default(autoincrement()) @id
+  published Boolean @default(false)
+  title     String
+  User      User?   @relation(fields: [authorId], references: [id])
+}
+
+```
+### Fourth, Run the project
+First compile the dependency file
+```terminal
+npx mrapi generate --name one
+```
+Run in developer environment
+```termianl
+npx ts-node-dev --respawn --transpile-only ./src/app.ts
+```
