@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: ../mrapi-w@1x.png
-heroText: mrapi
+heroText: null
 tagline: 欢迎来到mrapi
 actionText: 快速上手 →
 actionLink: /zh/GettingStart/

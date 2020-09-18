@@ -24,6 +24,8 @@ module.exports = {
     // sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
     // displayAllHeaders: true,
     lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间,
+    logo: 'mrapi-w@1x.png',
+
     locales: {
       '/': {
         selectText: 'Languages',

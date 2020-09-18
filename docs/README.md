@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /mrapi-w@1x.png
-heroText: mrapi
+heroText: null
 tagline: Welecome to mrapi
 actionText: QuickStart →
 actionLink: /GettingStart/

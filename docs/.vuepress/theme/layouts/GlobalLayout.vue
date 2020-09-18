@@ -1,6 +1,6 @@
 <!-- .vuepress/theme/layouts/GlobalLayout.vue -->
 <template>
-  <div id="global-layout">
+  <div class="boxDiy" id="global-layout">
     <component :is="layout" />
     <footer>
       <div class="Footer">
@@ -28,6 +28,9 @@
   }
 </script>
 <style>
+  .boxDiy {
+    height: 100%;
+  }
   .Footer {
     border-top: 1px solid #eaecef;
     padding: 30px 0;
