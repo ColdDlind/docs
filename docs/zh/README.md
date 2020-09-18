@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage:  null
+heroImage: ../mrapi-w@1x.png
 heroText: mrapi
 tagline: 欢迎来到mrapi
 actionText: 快速上手 →
