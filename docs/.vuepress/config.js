@@ -2,7 +2,7 @@ module.exports = {
   base: '/docs/',
   title: 'mrapi',
   description: 'mrapi docs',
-  head: [['link', { rel: 'icon', href: '/favico.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   locales: {
     '/': {
       lang: 'en-US',
