@@ -68,13 +68,14 @@ Usage: run generate [options]
 Generate prisma schema and nexus types
 
 Options:
-  --env <path>     env filePath (default: "config/.env")
-  --name <name>    Schema client name. If the name is "management", Only generate management client.
-  --cnt <options>  Generate CNT params. whiteList: disableQueries,disableMutations
-  --m <options>    Generate models
-  --em <options>   Exclude generate models
-  --eqm <options>  Exclude Queries and Mutations
-  -h, --help       display help for command
+  --env <path>          env filePath (default: "config/.env")
+  --name <name>         Schema client name. If the name is "management", Only generate management client.
+  --cnt <options>       Generate CNT params. whiteList: disableQueries,disableMutations
+  --m <options>         Generate models
+  --em <options>        Exclude generate models
+  --eqm <options>       Exclude Queries and Mutations
+  -h, --help            display help for command
+  --provider <options>  Datasource provider list: sqlite,mysql,postgresql.
 ```
 
 #### --name
