@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /mrapi-w@1x.png
+heroImage: /assets/img/mrapi-w@1x.png
 heroText: null
 tagline: Welecome to mrapi
 actionText: QuickStart →
