@@ -140,6 +140,12 @@ const outputPath = path.join(cwd, outputDir, name)
 
 为空表示不忽略任何 `model`
 
+#### --provider
+`--name`对应的`schema`配置的datasource provider。
+- 非必填
+- 参数类型：`string`（逗号分隔）
+- 参考值：`mysql, postgresql` 或 `sqllite`
+
 ### 示例
 
 ```shell

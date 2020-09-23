@@ -130,6 +130,14 @@ Which `models` ignore both `queries` and `mutations`
 + Type: `string`(Comma separated)
 + Undefined means all models are enabled
 
+### --provider
+
+The datasource provider of the `schema` configuration corresponding to `--name`.
+
++ Optional/Not required
++ Type: `string`(Comma separated)
++ Reference Value: `mysql, postgresql` 或 `sqllite`
+
 ## example
 
 ```terminal
